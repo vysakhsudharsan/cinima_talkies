@@ -25,7 +25,7 @@ const Cinima = () => {
 
       try {
       // Send the request to the API
-      const response = await axios.get('http://www.omdbapi.com', {
+      const response = await axios.get('https://www.omdbapi.com', {
         params: requestData,
       });
 
@@ -51,10 +51,6 @@ const Cinima = () => {
       <button className='btn_search' onClick={handleSearchClick}>Search</button> 
       {loading && <p className="loading-message">Loading...</p>}
       {error && <p className="error-message">{error}</p>}
-
-      {loading && <p className="loading-message">Loading...</p>}
-      {error && <p className="error-message">{error}</p>}
-
       {data && (
         <div className="cinema-container">
           {/* Details box on the left */}
