@@ -1,0 +1,139 @@
+/* Container for the entire component */
+.cinema-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 400px; /* Set a fixed height for the container */
+    padding: 20px;
+  }
+  
+  /* Left side details box */
+  .details-box {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; /* Ensure the details box takes the full height */
+    overflow-y: auto; /* Add scrolling if content overflows */
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    text-align: left; /* Ensure text is aligned left */
+  }
+  
+  /* Title and year styling */
+  .details-box h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px; /* Reduced font size for the title */
+    margin-bottom: 15px;
+  }
+  
+  .details-box h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Styling the unordered list for details */
+  .details-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Each list item for details (show label and value in a row) */
+  .details-box li {
+    margin-bottom: 5px; /* Reduced the gap between rows */
+    display: flex;
+    align-items: center; /* Align both label and value vertically in the center */
+    font-size: 14px; /* Reduced font size for details */
+  }
+  
+  .details-box li strong {
+    font-weight: bold;
+    margin-right: 5px; /* Reduced space between label and value */
+    min-width: 120px; /* Ensure labels have enough space without too much gap */
+    white-space: nowrap; /* Prevent label text from wrapping */
+  }
+  
+  /* Poster styling (right side) */
+  .poster {
+    width: 300px;  /* Fixed width */
+    height: 100%;  /* Ensure the poster stretches to the same height as details box */
+    flex-shrink: 0;
+  }
+  
+  .poster img {
+    width: 100%;  /* Ensure the image stretches to the full width of the poster container */
+    height: 100%;  /* Ensure the image stretches to the full height of the container */
+    object-fit: cover;  /* Ensures the image fills the container without distortion */
+    border-radius: 8px;
+  }
+  
+  /* Input and button container */
+  .search-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Loading and error messages */
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #ff6347;
+  }
+  .btn_search {
+    padding: 5px 16px;
+    font-size: 14px;
+    background-color: #08c3f7; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_search:hover {
+    background-color: #45a049; 
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    margin-right: 10px; /* Adjust this value for the desired space */
+  }
+  
